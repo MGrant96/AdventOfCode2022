@@ -22,3 +22,4 @@ end
 
 
 puts "The highest amount an elf has this total:\n#{highest_cal}"
+puts "Top three calories combined:\n#{elves.sort.last(3).sum}"
