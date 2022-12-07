@@ -28,7 +28,7 @@ In this example, if you were to follow the strategy guide, you would get a total
 
 ## Task 1: What would your total score be if everything goes exactly according to your strategy guide?
 
-## Task 2: Part Two
+## Task 2: What would your total score be if everything goes exactly according to the strategy guide with the changes below?
 
 The Elf finishes helping with the tent and sneaks back over to you. "Anyway, the second column says how the round needs to end: X means you need to lose, Y means you need to end the round in a draw, and Z means you need to win. Good luck!"
 
