@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-overall_sum = 0
+overall_sum1 = 0
 value = 0
 
 File.readlines('dec3input.txt').each do |line|
@@ -15,12 +15,30 @@ File.readlines('dec3input.txt').each do |line|
             else
                 value = l.ord - 38
             end
-          overall_sum += value
+          overall_sum1 += value
     
           break
         end
     end
 end
-puts "Part 1: \mThe overall score is :\n#{overall_sum}\n"
+puts "Part 1: \nThe overall score is :\n#{overall_sum1}\n"
 
+overall_sum2 = 0
 
+input = File.read('dec3input.txt').split("\n")
+input.each_slice(3){ |one, two, three| 
+  contain = ""
+  one.split("").each{ |letter|
+    if two.include?(letter) and three.include?(letter)
+        if not contain.include?(letter)
+            if letter.match /[[:upper:]]/
+              overall_sum2 += letter.ord - 38
+            else
+              overall_sum2 += letter.ord - 96
+            end
+            contain += letter
+        end   
+    end
+}
+}
+puts "Part 2: \nThe Second task score is :\n#{overall_sum2}\n"
