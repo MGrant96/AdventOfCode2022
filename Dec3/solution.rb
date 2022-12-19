@@ -21,5 +21,6 @@ File.readlines('dec3input.txt').each do |line|
         end
     end
 end
+puts "Part 1: \mThe overall score is :\n#{overall_sum}\n"
 
-puts overall_sum
+
