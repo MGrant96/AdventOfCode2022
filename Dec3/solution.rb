@@ -39,6 +39,7 @@ input.each_slice(3){ |one, two, three|
             contain += letter
         end   
     end
+  }
 }
-}
+
 puts "Part 2: \nThe Second task score is :\n#{overall_sum2}\n"
