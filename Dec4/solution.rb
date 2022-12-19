@@ -16,5 +16,8 @@ end
 
 p task1
 
-task2 
+task2 = input.count do |elf1_range, elf2_range|
+    elf1_range.last >= elf2_range.first && elf2_range.last >= elf1_range.first
+end
 
+p task2
